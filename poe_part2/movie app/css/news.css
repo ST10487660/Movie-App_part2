@@ -1,0 +1,117 @@
+/* Body & Background */
+body {
+    background-image: url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+/* Main spacing */
+main {
+    margin-top: 120px; /* space for fixed navbar */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar (unchanged colors) */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* original color */
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Branding (title + slogan slightly moved right for alignment) */
+.branding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+
+.titles {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 4px 8px;
+    background-image: url(images/2nd.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(4, 21, 21); /* original */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.slogan {
+    font-size: 14px;
+    font-style: italic;
+    margin: 2px 0 0;
+    padding: 2px 6px;
+    background-image: url(images/2nd.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(33, 31, 31); /* original */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navbar links */
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white; /* unchanged */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #555; /* unchanged hover */
+}
+
+/* Section Titles */
+main h2, main h3 {
+    color: #f0f0f0; /* light grey instead of yellow */
+    margin-bottom: 15px;
+}
+
+/* News articles */
+article {
+    max-width: 700px;
+    margin: 20px auto;
+    background: rgba(0,0,0,0.6); /* semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.85);
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 50px;
+}

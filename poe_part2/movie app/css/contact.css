@@ -1,0 +1,117 @@
+/* Body & Background */
+body {
+    background-image: url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+/* Main spacing */
+main {
+    margin-top: 120px; /* space for fixed navbar */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar  */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Branding */
+.branding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+
+.titles {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 4px 8px;
+    background-image: url(images/2nd.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(4, 21, 21); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.slogan {
+    font-size: 14px;
+    font-style: italic;
+    margin: 2px 0 0;
+    padding: 2px 6px;
+    background-image: url(images/2nd.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(33, 31, 31); 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navbar links */
+.navbar ul {
+    display: flex;
+    gap: 5Spx;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #555; 
+}
+
+/* Section Titles */
+main h2, main h3 {
+    color: #e0e0e0; 
+    margin-bottom: 15px;
+}
+
+/* Section content boxes */
+main p, main ul {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    background: rgba(0,0,0,0.6); 
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+main ul {
+    list-style: disc inside;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.85);
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 50px;
+}

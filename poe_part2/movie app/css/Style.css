@@ -1,0 +1,160 @@
+/* Background */
+body {
+  background-image: url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+/* Navbar (unchanged colors) */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333; /* kept your color */
+  padding: 10px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Branding (title + slogan to the left but shifted slightly right) */
+.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px; /* moves to the right */
+}
+
+.titles {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  padding: 4px 8px;
+  background-image: url(images/2nd.jpg); /* your original background */
+  background-size: cover;
+  background-position: center;
+  color: rgb(4, 21, 21); /* original */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.slogan {
+  font-size: 14px;
+  font-style: italic;
+  margin: 2px 0 0;
+  padding: 2px 6px;
+  background-image: url(images/2nd.jpg); /* your original background */
+  background-size: cover;
+  background-position: center;
+  color: rgb(33, 31, 31); /* original */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navbar links (kept colors) */
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white; /* unchanged */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background: #555; 
+}
+
+/* Main content */
+main {
+  margin-top: 120px;
+  text-align: center;
+  padding: 20px;
+}
+
+.intro h2 {
+  font-size: 28px;
+  color: #100e05; /* highlight */
+}
+
+.intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Promo Section */
+.promo h3 {
+  margin-top: 40px;
+  font-size: 22px;
+  color: #0e0d07; /* highlight */
+}
+
+.promo-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.promo-gallery img {
+  width: 280px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.promo-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Why Us Section */
+.why-us h3 {
+  margin-top: 50px;
+  font-size: 22px;
+  color: #050504; /* highlight */
+}
+
+.why-us ul {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+  background: rgba(0,0,0,0.7);
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.why-us li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.85);
+  font-size: 14px;
+  color: #aaa;
+}
+
